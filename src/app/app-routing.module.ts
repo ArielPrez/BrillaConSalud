@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { VistaInicialComponent } from './vista-inicial/vista-inicial.component';
 
 
-const routes: Routes = [];
+export const routes: Routes = [
+  // { path: '', component: VistaInicialComponent },
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+ }
