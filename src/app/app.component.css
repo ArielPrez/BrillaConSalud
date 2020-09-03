@@ -14,3 +14,9 @@
 .bor{
     border: solid 1px black;
 }
+.title{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 50px;
+    color: darkturquoise;
+}
