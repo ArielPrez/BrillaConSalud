@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Brilla Con Salud';
+
+  loadedMenu = 'estiloDvida';
+
+  onNavigate(menu: string){
+    this.loadedMenu = menu;
+  }
 }

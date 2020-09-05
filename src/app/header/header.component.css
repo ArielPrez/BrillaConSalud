@@ -1,0 +1,22 @@
+.leftCol{
+    text-align: left;
+}
+.centerCol{
+    /* text-anchor: middle; */
+    text-align: center;
+}
+.rightCol{
+    text-align: right;
+}
+.mainRow{
+    text-align: center;
+}
+.bor{
+    border: solid 1px black;
+}
+.title{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 50px;
+    color: darkturquoise;
+}

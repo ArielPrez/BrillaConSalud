@@ -9,6 +9,7 @@ import { LactanciaComponent } from './lactancia/lactancia.component';
 import { ViajesComponent } from './viajes/viajes.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { AcercaDeMiComponent } from './acerca-de-mi/acerca-de-mi.component';
+import { HeaderComponent } from './header/header.component';
 // import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AcercaDeMiComponent } from './acerca-de-mi/acerca-de-mi.component';
     LactanciaComponent,
     ViajesComponent,
     CursosComponent,
-    AcercaDeMiComponent
+    AcercaDeMiComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,125 +1,20 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col bor leftCol">
-      <span>
-        <a href="https://www.instagram.com/brillaconsaludybelleza/">
-          <img width="30" height="30"
-          src="../assets/img/Instg.svg" alt="Instagram">
-        </a>
-      </span>
-      <span>
-        <a href="https://www.facebook.com/brillaconsalud/">
-          <img width="30" height="30"
-          src="../assets/img/Fb-round-corner.svg" alt="Facebook">
-        </a>
-      </span>
-    </div>
-
-    <div class="col-sm-8 bor centerCol">
-
-    
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-              >Estilo de Vida</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#A">Action</a>
-                <a class="dropdown-item" href="#An">Another action</a>
-                <a class="dropdown-item" href="#S">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Lactancia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Viajes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Cursos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Acerca de mi</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#A">Action</a>
-                <a class="dropdown-item" href="#An">Another action</a>
-                <a class="dropdown-item" href="#S">Something else here</a>
-              </div>
-            </li> -->
-          </ul>
-        </div>
-      </nav>
-    <br>
-      <!-- <br><hr><br> -->
-      <span class="title">{{ title }} </span>
-      <!-- <br><hr><br> -->
-      
-    </div>
-
-    <div class="col bor rightCol">
-      <span>
-        <a href="http://">Contáctame
-        </a>
-      </span>
-      <span>
-        <a href="http://">Subscribete
-        </a>
-      </span>
-    </div>
-
-  </div>
-</div>
-
+<app-header (menuSelected)="onNavigate($event)"></app-header>
 <div class="container">
-  
-  
   <div class="row">
     <div class="col-sm-12 bor">
-    <app-vista-inicial></app-vista-inicial>
+      <!-- <app-vista-inicial></app-vista-inicial> -->
+      
+      <app-estilo-vida *ngIf="loadedMenu === 'estiloDvida'"></app-estilo-vida>
+      
+      <app-lactancia *ngIf="loadedMenu === 'lactancia'"></app-lactancia>
+      
+      <app-viajes *ngIf="loadedMenu === 'viajes'"></app-viajes>
+      
+      <!-- <app-cursos></app-cursos> -->
+      
+      <app-acerca-de-mi *ngIf="loadedMenu === 'acercaDmi'"></app-acerca-de-mi>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-12 bor">
-    <app-estilo-vida></app-estilo-vida>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 bor">
-    <app-lactancia></app-lactancia>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 bor">
-    <app-viajes></app-viajes>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 bor">
-    <app-cursos></app-cursos>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12 bor">
-    <app-acerca-de-mi></app-acerca-de-mi>
-    </div>
-  </div>
-
 </div>
 
 
