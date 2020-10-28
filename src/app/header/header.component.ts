@@ -7,13 +7,13 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent {
 
-  title = 'Brilla Con Salud';
-  @Output() menuSelected = new EventEmitter<string>();
-  constructor() { }
+  collapsed = true;
+  // @Output() menuSelected = new EventEmitter<string>();
+  // constructor() { }
 
-  onSelect(menuOpt: string) {
-    this.menuSelected.emit(menuOpt);
-  }
-  
+  // onSelect(menuOpt: string) {
+  //   this.menuSelected.emit(menuOpt);
+  // }
+
 
 }

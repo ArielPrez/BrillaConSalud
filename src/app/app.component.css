@@ -1,0 +1,12 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+.title{
+    font-family: cursive;
+    font-style: italic;
+    font-family: 'Sofia';
+    font-size: 45px;
+    color: darkturquoise;
+    text-align: center;
+}

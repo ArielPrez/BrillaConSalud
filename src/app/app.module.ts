@@ -1,30 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VistaInicialComponent } from './vista-inicial/vista-inicial.component';
+// import { VistaInicialComponent } from './vista-inicial/vista-inicial.component';
 import { EstiloVidaComponent } from './estilo-vida/estilo-vida.component';
 import { LactanciaComponent } from './lactancia/lactancia.component';
 import { ViajesComponent } from './viajes/viajes.component';
-import { CursosComponent } from './cursos/cursos.component';
 import { AcercaDeMiComponent } from './acerca-de-mi/acerca-de-mi.component';
 import { HeaderComponent } from './header/header.component';
-// import { AlertModule } from 'ngx-bootstrap';
-
+import { DropdownDirective } from './shared/dropdown.directive';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
-    VistaInicialComponent,
     EstiloVidaComponent,
     LactanciaComponent,
     ViajesComponent,
-    CursosComponent,
     AcercaDeMiComponent,
-    HeaderComponent
+    HeaderComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
     // AlertModule.forRoot()
   ],

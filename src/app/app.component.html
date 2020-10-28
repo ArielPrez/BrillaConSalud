@@ -1,22 +1,13 @@
 <app-header (menuSelected)="onNavigate($event)"></app-header>
 <div class="container">
   <div class="row">
-    <div class="col-sm-12 bor">
-      <!-- <app-vista-inicial></app-vista-inicial> -->
-      
-      <app-estilo-vida *ngIf="loadedMenu === 'estiloDvida'"></app-estilo-vida>
-      
-      <app-lactancia *ngIf="loadedMenu === 'lactancia'"></app-lactancia>
-      
-      <app-viajes *ngIf="loadedMenu === 'viajes'"></app-viajes>
-      
-      <!-- <app-cursos></app-cursos> -->
-      
-      <app-acerca-de-mi *ngIf="loadedMenu === 'acercaDmi'"></app-acerca-de-mi>
+    <div class="col-md-12">
+      <div class="title">
+          <strong style="letter-spacing: 20px;"  *ngFor="let i of title">{{ i }}</strong>
+      </div>
+      <router-outlet></router-outlet>
+
     </div>
   </div>
 </div>
 
-
-
-<router-outlet></router-outlet>
