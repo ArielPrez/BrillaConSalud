@@ -4,7 +4,6 @@ import { AcercaDeMiComponent } from './acerca-de-mi/acerca-de-mi.component';
 import { EstiloVidaComponent } from './estilo-vida/estilo-vida.component';
 import { LactanciaComponent } from './lactancia/lactancia.component';
 import { ViajesComponent } from './viajes/viajes.component';
-import { VistaInicialComponent } from './vista-inicial/vista-inicial.component';
 
 
 const routes: Routes = [
@@ -14,6 +13,7 @@ const routes: Routes = [
   { path: 'viajes', component: ViajesComponent },
   { path: 'acerca-de-mi', component: AcercaDeMiComponent },
   { path: '', redirectTo: '/estilo-de-vida', pathMatch: 'full' },
+  // { path: 'not-found', component: PageNotFoundComponent, data: {message: 'Page not found!'} },
   { path: '**', redirectTo: '/not-found' }
 ];
 

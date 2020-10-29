@@ -25,10 +25,11 @@
       </ul>
         <ul class="navbar mx-auto">
           <div class="nav navbar-nav">
-            <li routerLinkActive="active"
+            <li routerLinkActive=""
                 class="nav-item dropdown" 
                 appDropdown>
                 <a class="nav-link dropdown-toggle"
+                    routerLink="/"
                     id="drdwEstiloVida"
                     data-toggle="dropdown"
                     aria-haspopup="true"
@@ -36,9 +37,9 @@
                   Estilo de Vida
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="drdwEstiloVida">
-                  <li><a class="dropdown-item" routerLink="/">Action</a></li>
-                  <li><a class="dropdown-item" routerLink="/">Another action</a></li>
-                  <li><a class="dropdown-item" routerLink="/">Something else here</a></li>
+                  <li routerLinkActive="active"><a class="dropdown-item" routerLink="/">Action</a></li>
+                  <li routerLinkActive="active"><a class="dropdown-item" routerLink="/">Another action</a></li>
+                  <li routerLinkActive="active"><a class="dropdown-item" routerLink="/">Something else here</a></li>
                 </ul>
             </li>
 
