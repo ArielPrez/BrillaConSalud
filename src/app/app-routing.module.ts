@@ -9,6 +9,7 @@ import { ViajesComponent } from './viajes/viajes.component';
 const routes: Routes = [
   // { path: '', component: VistaInicialComponent },
   { path: 'estilo-de-vida', component: EstiloVidaComponent },
+  // yoga, ejercicios, nutricion
   { path: 'lactancia', component: LactanciaComponent },
   { path: 'viajes', component: ViajesComponent },
   { path: 'acerca-de-mi', component: AcercaDeMiComponent },
