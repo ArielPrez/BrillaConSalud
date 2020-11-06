@@ -11,6 +11,9 @@ import { AcercaDeMiComponent } from './acerca-de-mi/acerca-de-mi.component';
 import { HeaderComponent } from './header/header.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { AppRoutingModule } from './app-routing.module';
+import { YogaComponent } from './yoga/yoga.component';
+import { NutricionComponent } from './nutricion/nutricion.component';
+import { EjercicioComponent } from './ejercicio/ejercicio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,10 @@ import { AppRoutingModule } from './app-routing.module';
     ViajesComponent,
     AcercaDeMiComponent,
     HeaderComponent,
-    DropdownDirective
+    DropdownDirective,
+    YogaComponent,
+    NutricionComponent,
+    EjercicioComponent
   ],
   imports: [
     BrowserModule,
