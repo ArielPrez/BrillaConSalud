@@ -17,6 +17,9 @@
 .dropdown-menu>li>a:active{
     background: rgb(250, 250, 250);
 }
+.dropdown-menu>li>a:focus{
+    color: rgb(0, 206, 209);
+}
 #navCenter>li>a:hover{
     color: rgb(0, 206, 209);
 }

@@ -26,10 +26,11 @@
       
       <ul class="navbar mx-auto">
         <div id="navCenter" class="nav navbar-nav">
-          <li routerLinkActive=""
-              class="nav-item dropdown" 
-              appDropdown>
+          <li routerLinkActive="active"
+              class="nav-item" 
+              >
               <a class="nav-link dropdown-toggle"
+                  routerLink="/estilo-de-vida"
                   id="drdwEstiloVida"
                   data-toggle="dropdown"
                   aria-haspopup="true"
@@ -37,9 +38,9 @@
                 Estilo de Vida
               </a>
               <ul class="dropdown-menu" aria-labelledby="drdwEstiloVida">
-                <li><a id="yoga" class="dropdown-item" (click)="onYoga()">Yoga</a></li>
-                <li><a class="dropdown-item" (click)="onNutricion()">Nutricion</a></li>
-                <li><a class="dropdown-item" (click)="onEjercicios()">Ejercicios</a></li>
+                <li routerLinkActive="active"><a id="yoga" class="dropdown-item" (click)="onYoga()">Yoga</a></li>
+                <li routerLinkActive="active"><a class="dropdown-item" (click)="onNutricion()">Nutricion</a></li>
+                <li routerLinkActive="active"><a class="dropdown-item" (click)="onEjercicios()">Ejercicios</a></li>
               </ul>
           </li>
 
